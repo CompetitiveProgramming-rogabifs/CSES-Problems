@@ -18,7 +18,8 @@ vector<ll> creatVector(ll n) {
     return v;
 }
 
-vector<ll> traverseVectorSimetrical(ll x, ll k) {
+vector<ll> symmetricalSum(ll x, ll k) {
+    //Calculate the symmetric sum and append the number to set 1
     vector<ll> set1;
     ll sumRequired = x/2;
     ll currentSum = 0;
@@ -65,7 +66,7 @@ void twoSets(ll n) {
         //creat vector of n
         vector<ll> v = creatVector(n);
         //Traverse v in symmetric order
-        vector<ll> set1 = traverseVectorSimetrical(sum,n);
+        vector<ll> set1 = symmetricalSum(sum,n);
         //Sort set1
         sort(set1.begin(), set1.end());
         //Define set2
