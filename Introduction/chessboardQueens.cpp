@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//Backtracking
 void solve(vector<vector<char> >& table, int row, vector<bool>& ocuCol, vector<bool>& ocuPrimDiagonal, vector<bool>& ocuSecDiagonal, int& count) {
     if(row == 8) {
         count++;
@@ -22,7 +23,7 @@ int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    vector<bool> c(8, false), p(8, false), s(8, false);
+    vector<bool> c(8, false), p(8, false), s(8, false); 
     int aux = 0;
 
     vector<vector<char> > table(8, vector<char>(8));
