@@ -3,7 +3,7 @@ using namespace std;
 typedef long long ll;
 
 
-//O(n)
+//Using vector
 void solve(vector<ll> vec) {
     int count = 0;
     sort(vec.begin(), vec.end());
@@ -14,7 +14,7 @@ void solve(vector<ll> vec) {
     cout << count << endl;
 }
 
-//O(nlogn)
+//Using set
 void solveSet(set<ll> vec, ll n) {   
     while(n--) {
         ll x;
@@ -30,7 +30,7 @@ int main() {
     ll n, aux, x;
     vector<ll> v;
     cin >> n;
-    //O(n) ----------
+    //Using vector ----------
     // while(n--) {
     //     cin >> x;
     //     v.push_back(x); 
@@ -38,7 +38,7 @@ int main() {
     //solve(v);
     //------------
 
-    //O(logn)
+    //Using set
     set<ll> s;
     solveSet(s,n);
     return 0;
